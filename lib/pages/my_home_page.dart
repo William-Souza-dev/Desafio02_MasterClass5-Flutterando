@@ -15,22 +15,24 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       color: Color(0xffEC6867),
-      child: LayoutBuilder(
-        builder: ((context, constraints) {
-          if (constraints.maxWidth < 700) {
-            return SafeArea(
-              child: MobileDesign(
-                constraints: constraints,
-              ),
-            );
-          } else {
-            return SafeArea(
-              child: DesktopDesign(
-                constraints: constraints,
-              ),
-            );
-          }
-        }),
+      child: Container(
+        child: LayoutBuilder(
+          builder: ((context, constraints) {
+            if (constraints.maxWidth < 700) {
+              return SafeArea(
+                child: MobileDesign(
+                  constraints: constraints,
+                ),
+              );
+            } else {
+              return SafeArea(
+                child: DesktopDesign(
+                  constraints: constraints,
+                ),
+              );
+            }
+          }),
+        ),
       ),
     );
   }
