@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MobileDesign extends StatelessWidget {
+class MobileDesign extends StatefulWidget {
   final BoxConstraints constraints;
   const MobileDesign({Key? key, required this.constraints}) : super(key: key);
 
   @override
+  State<MobileDesign> createState() => _MobileDesignState();
+}
+
+class _MobileDesignState extends State<MobileDesign> {
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: constraints.maxWidth,
-      height: constraints.maxHeight,
+      width: widget.constraints.maxWidth,
+      height: widget.constraints.maxHeight,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -26,107 +31,116 @@ class MobileDesign extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
-          Container(
-            height: 40,
-            width: 350,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(
-                Radius.circular(30),
-              ),
-              border: Border.all(
-                color: Colors.white,
-              ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  margin: EdgeInsets.only(left: 10),
-                  width: 20,
-                  height: 20,
-                  child: Image.asset("assets/images/logo_apple.png"),
+          InkWell(
+            onTap: () {},
+            child: Container(
+              height: 40,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
                 ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(30, 0, 110, 0),
-                  child: Text(
-                    "SIGN IN WITH APPLE",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.center,
+                border: Border.all(
+                  color: Colors.white,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    width: 20,
+                    height: 20,
+                    child: Image.asset("assets/images/logo_apple.png"),
                   ),
-                ),
-              ],
+                  Container(
+                    margin: EdgeInsets.fromLTRB(30, 0, 110, 0),
+                    child: Text(
+                      "SIGN IN WITH APPLE",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           SizedBox(
             height: 8,
           ),
-          Container(
-            height: 40,
-            width: 350,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(
-                Radius.circular(30),
-              ),
-              border: Border.all(
-                color: Colors.white,
-              ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  margin: EdgeInsets.only(left: 10),
-                  width: 20,
-                  height: 20,
-                  child: Image.asset("assets/images/logo_facebook.png"),
+          InkWell(
+            onTap: () {},
+            child: Container(
+              height: 40,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
                 ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(30, 0, 90, 0),
-                  child: Text(
-                    "SIGN IN WITH FACEBOOK",
-                    style: TextStyle(
-                      color: Colors.white,
+                border: Border.all(
+                  color: Colors.white,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    width: 20,
+                    height: 20,
+                    child: Image.asset("assets/images/logo_facebook.png"),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(30, 0, 90, 0),
+                    child: Text(
+                      "SIGN IN WITH FACEBOOK",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           SizedBox(
             height: 8,
           ),
-          Container(
-            height: 40,
-            width: 350,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(
-                Radius.circular(30),
-              ),
-              border: Border.all(
-                color: Colors.white,
-              ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  margin: EdgeInsets.only(left: 10),
-                  width: 20,
-                  height: 20,
-                  child: Image.asset("assets/images/bubble.png"),
+          InkWell(
+            onTap: () {},
+            child: Container(
+              height: 40,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
                 ),
-                Container(
-                  margin: EdgeInsets.fromLTRB(50, 0, 70, 0),
-                  child: Text(
-                    "SIGN IN WITH PHONE NUMBER",
-                    style: TextStyle(
-                      color: Colors.white,
+                border: Border.all(
+                  color: Colors.white,
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    width: 20,
+                    height: 20,
+                    child: Image.asset("assets/images/bubble.png"),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(50, 0, 70, 0),
+                    child: Text(
+                      "SIGN IN WITH PHONE NUMBER",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           )
         ],
