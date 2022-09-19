@@ -1,16 +1,6 @@
-# desafio_02
+# Desafio02 MasterClass05 Flutterando
+  
 
-A new Flutter project.
+## Tela Implementada com Responsividade
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Desafio02](https://user-images.githubusercontent.com/105791594/191133864-716701d0-e57a-4f7f-ad4e-07f195c56081.gif)
